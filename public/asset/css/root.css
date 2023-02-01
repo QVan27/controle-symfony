@@ -1,0 +1,15 @@
+:root {
+    --c-dark: #242629;
+    --c-light: #fffffe;
+    --c-text: #94a1b2;
+    --c-button: #7f5af0;
+    --c-card-background: #16161a;
+
+    --fs-title: calc(24px + (45 - 24) * ((100vw - 300px) / (1920 - 300)));
+    --fs-subtitle: calc(20px + (35 - 20) * ((100vw - 300px) / (1920 - 300)));
+    --fs-smalltitle: calc(18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
+    --fs-text: calc(16px + (18 - 16) * ((100vw - 300px) / (1920 - 300)));
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');

@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<section class="medias">
+		<div class="wrap">
+			<h1>Listes des derniers films/séries</h1>
+			<ul class="medias__list">
+				{% for media in medias %}
+					<li class="medias__item">
+						<div class="medias__item--img">
+							<span>{{ media.id }}</span>
+							<img src="https://source.unsplash.com/random/?movies" alt="{{ media.nom }}" class="medias__poster">
+						</div>
+						<div class="medias__item--content">
+							<h2>{{ media.nom }}</h2>
+							<p>{{ media.date | date('d-m-Y') }}</p>
+							<p>{{ media.synopsis }}</p>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+{% endblock %}
